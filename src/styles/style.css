@@ -1,0 +1,128 @@
+.headerStyle{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1%;
+}
+
+.headerDiv{
+    font-size: 40px;
+}
+.topnav {
+  	overflow: hidden;
+  	background-color: #2e8b57;
+  	display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px;
+    margin: 4px;
+}
+
+.topnav div {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav div:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav div.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.horizontal{
+ 	border-top: 2px solid black;
+}
+.producttable{
+	display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 12px;
+    background-color: cadetblue;
+    width: 70%;
+}
+.productmaindiv{
+	display: flex;
+  justify-content: center;
+}
+.productcontent{
+	  display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    width: 70%;
+    background-color: ghostwhite;
+}
+.productAddDiv{
+	margin: 12%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.formStyle{
+    border-radius: 7px;
+    border: 6px solid #00a4ff;
+    width: 375px;
+    height: 184px;
+}
+.productNameDiv{
+    display: flex;
+    margin: 9%;
+}
+.productinput{
+    margin-left: 28px;
+}
+.rateinput{
+	margin-left: 30%;
+}
+.cancelstyle{
+	margin-left: 15px;
+}
+.cursorstyle{
+	cursor: pointer;
+}
+.addbutton{
+	background-color: #0064CD;
+    padding: 8px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.buttondiv{
+    display: flex;
+    justify-content: flex-end;
+}
+.toDateDiv{
+  display: flex;
+  /* margin: 26px; */
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 20px;
+}
+.datepickerdiv{
+  margin-left: 5%;
+}
+.fromdatediv{
+  display: flex;
+  /* margin: 26px; */
+  justify-content: center;
+  margin-top: 3%;
+}
+.reportSubmit{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+.imagedisplay{
+  width: 15px;
+  height: 17px;
+}
+
+
