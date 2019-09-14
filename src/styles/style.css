@@ -93,7 +93,7 @@
     font-size: 16px;
     font-weight: bold;
     margin-left: 25px;
-    cursor: pointer;
+    
 }
 .buttondiv{
     display: flex;
@@ -124,5 +124,75 @@
   width: 15px;
   height: 17px;
 }
+.icon{
+  width: 15px;
+  height:15px;
+}
+.cursorstyle{
+  cursor: pointer;
+}
+.flexAlignCenterJustifyCenter{
+display: flex;
+justify-content: center;
+}
+.success{
+  color:green;
+}
+.failure{
+  color:red;
+}
+.headerIcon{
+  width: 75px;
+  height:45px;
+}
+.displayFlex{
+  display: flex;
+}
+.flexDirectionColumn{
+  display: flex;
+  flex-direction: column;
+}
+.billMainDiv{
+  margin: 10px;
+}
+.selectProduct{
+  padding: 20px;
+}
+.quantity{
+ margin-left: 5%;
+}
 
-
+.SelectBox {
+  font-size: 16px;
+  font-family: serif;
+  background: #FFFFFF;
+  width: 175px;
+  height: 26px;
+  padding: 0px;
+}
+.billtotalColor{
+  background-color: burlywood !important;
+}
+.quantityInput{
+  margin-left: 20%;
+}
+.reportMessageStyle{
+    color: red;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.flextEvenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+.backDiv{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.backDiv > input {
+  width: 10%;
+  /* height: 9%; */
+  border-color: darkseagreen;
+  font-size: 15px;
+}

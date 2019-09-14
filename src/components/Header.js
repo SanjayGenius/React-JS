@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/style.css';
+import deleteIcon from "../assets/logo.jpg";
 class Header extends React.Component {
 	redirect(path){
 		this.props.history.push(path)
@@ -8,8 +9,13 @@ class Header extends React.Component {
 		return (
 			<div>
 				<header className="headerStyle">
-					<div className="headerDiv">
-						Pradeep Billing Application
+					<div className="headerDiv displayFlex">
+						<div>
+							<img className="headerIcon" src={deleteIcon}/>
+						</div>
+						<div>
+						URBAN 71 Cakes & Cafe
+						</div>
 					</div>
 				</header>
 				<div className="topnav">

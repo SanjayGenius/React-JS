@@ -10,6 +10,7 @@
   "author": "sanjay<sanjaym0621@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "material-table": "^1.49.0",
     "react": "^16.8.4",
     "react-date-picker": "^7.7.0",
     "react-dom": "^16.8.4",
