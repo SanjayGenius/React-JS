@@ -1,0 +1,133 @@
+.printmaindiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.invoice-title{
+    font-size: 45px;
+}
+.invoice-details{
+    width: 100%;
+    display: flex;
+    padding-top: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.invoice-details-1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.invoice-details-2{
+    width: 40%;
+}
+.invoice-details-1-inner{
+    padding-top: 5px;
+}
+.invoice-details-2-inner{
+    padding-top: 5px;
+}
+.invoice-content{
+    display: flex;
+    padding-top: 5%;
+}
+.invoice-table-header{
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+.invoice-table-header .sno{
+    margin: 0;
+    width: 5%;
+}
+.invoice-table-header .item{
+    margin: 0;
+    width: 35%;    
+}
+.invoice-table-header .quantity{
+    margin: 0;
+    width: 10%;
+}
+.invoice-table-header .price{
+    margin: 0;
+    width: 10%;
+}
+.invoice-table-header .discount{
+    margin: 0;
+    width: 10%;
+}
+.invoice-table-header .tax{
+    margin: 0;
+    width: 10%;
+}
+.invoice-table-header .line-total{
+    margin: 0;
+    width: 15%;
+}   
+.invoice-table-header-title{
+    text-align: center;
+}
+.invoice-table-data{
+    display: flex;
+    padding: 10px 0px;
+}
+.invoice-table-data-content{
+    text-align: center;
+}
+.invoice-content{
+    display: flex;
+    flex-direction: column;
+}
+.invoice-table-data .sno{
+    margin: 0;
+    width: 5%;
+}
+.invoice-table-data .item{
+    margin: 0;
+    width: 35%;    
+}
+.invoice-table-data .quantity{
+    margin: 0;
+    width: 10%;
+}
+.invoice-table-data .price{
+    margin: 0;
+    width: 10%;
+}
+.invoice-table-data .discount{
+    margin: 0;
+    width: 10%;
+}
+.invoice-table-data .tax{
+    margin: 0;
+    width: 10%;
+}
+.invoice-table-data .line-total{
+    margin: 0;
+    width: 15%;
+} 
+.invoice-footer{
+    display: flex;
+    width: 100%;
+}
+.invoice-footer-1{
+    width: 50%;
+}
+.invoice-footer-2{
+    width: 50%;
+}
+.invoice-footer-2-inner{
+    display: flex;
+    padding: 10px 0px;
+}
+.invoice-footer-details-1{
+     width: 50%;
+}
+.invoice-footer-details-2{
+     width: 35%;
+     display: flex;
+    justify-content: flex-end;
+}

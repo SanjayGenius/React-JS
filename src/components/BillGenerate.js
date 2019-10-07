@@ -186,6 +186,7 @@ class App extends React.Component {
         })
     }
     printBillDetails(event){
+        
         event.preventDefault();
         var data={
             customerName : this.state.customerName,
@@ -195,6 +196,14 @@ class App extends React.Component {
         APIService.postAPI(domain+"print",data).then((response) => {
 			if(response.fetchStatus == "success"){
                 if(response.result.status=="success"){
+                    this.props.history.push({
+                            pathname: '/print',
+                            state: { 
+                                customerName: this.state.customerName,
+                                totalBillAmount: this.state.totalBillAmount,
+                                productList: this.state.productList,
+                            }
+                        });
                     this.showResponse(true, response.result.data)
                 }else{
                     this.showResponse(false, response.result.data)
