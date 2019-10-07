@@ -196,3 +196,36 @@ justify-content: center;
   border-color: darkseagreen;
   font-size: 15px;
 }
+.totalposition{
+     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0px;
+    width: 85%;
+}
+.productprintdiv{
+  border: 4px solid green;
+  padding: -3px;
+  margin: 25px;
+  /* display: flex; */
+  justify-content: s;
+  /* width: 83%; */
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  position: relative;
+  left: 37%;
+}
+.titleprint{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+.printmaindiv{
+  width: 50%;
+}
