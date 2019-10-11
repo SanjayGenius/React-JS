@@ -233,7 +233,7 @@ class App extends React.Component {
                                 <div>
                                 <label className="input-label">Customer Name<sup>*</sup></label>
                                 </div>
-                                <div className="quantity">
+                                <div className="customerDiv">
                                 <input type="text" value={this.state.customerName}  onChange={(event) => this.handleCustomerNameChange(event)}></input>
                                 </div>
                             </div>
@@ -289,10 +289,10 @@ class App extends React.Component {
                                     <div>{item.productName}</div>
                                     <div>{item.quantity}</div>
                                     <div>{item.productPrice}</div>
-                                    <div>
+                                    <div className="edit_delete">
                                     <img className="icon cursorstyle" src={editIcon} onClick={()=>this.editBillDetails(item)}/>
                                     </div>
-                                    <div>
+                                    <div className="edit_delete">
                                     <img className="icon cursorstyle" src={deleteIcon} onClick={()=>this.deleteBillDetails(item)}/>
                                     </div>
                                 </div>

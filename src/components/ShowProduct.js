@@ -183,10 +183,10 @@ class App extends React.Component {
                                 <div>{item.product_name}</div>
                                 <div>{item.product_price}</div>
                                 {/* <div>{item.availability}</div> */}
-                                <div>
+                                <div className="edit_delete">
                                 <img className="icon cursorstyle" src={editIcon} onClick={()=>this.editProductDetails(item)}/>
                                 </div>
-                                <div>
+                                <div className="edit_delete">
                                 <img className="icon cursorstyle" src={deleteIcon} onClick={()=>this.deleteProductDetails(item)}/>
                                 </div>
                             </div>

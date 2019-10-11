@@ -118,7 +118,7 @@ class App extends React.Component {
                         <div id="products" className="producttable">
                             <div>Customer Name</div>
                             <div>Purchase Amount</div>
-                            <div> Date </div>
+                            {/* <div> Date </div> */}
                             <div>Product Details</div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ class App extends React.Component {
                             <div className="productcontent">
                                 <div>{item.customerName}</div>
                                 <div>{item.totalBillAmount}</div>
-                                <div>{item.date}</div>
+                                {/* <div>{item.date}</div> */}
                                 <div>
                                     <img className="imagedisplay cursorstyle" src={viewIcon}  onClick={()=>this.showDetailedReport(item)} />
                                 </div>

@@ -23,6 +23,9 @@ class ComponentToPrint extends React.Component {
 			purchaseDate:convertedDate,
 		})
 	}
+	componentDidMount(){
+		
+	}
 	getDateFormat(date){
         var year=date.getFullYear();
         var month= date.getMonth()+1;
@@ -42,10 +45,6 @@ class ComponentToPrint extends React.Component {
 				<div className="invoice-details-1">
 					<div className="invoice-details-1-inner">Customer Name : {this.state.customerName}</div> 
 					<div className="invoice-details-1-inner">Purchase Date : {this.state.purchaseDate}</div>
-					 
-					{/* <div className="invoice-details-1-inner">Issue Date : 10/12/1997</div>
-					<div className="invoice-details-1-inner">Issue Date : 10/12/1997</div>
-					<div className="invoice-details-1-inner">Issue Date : 10/12/1997</div> */}
 				</div>
 				<div className="invoice-details-2">
 					   <div className="invoice-details-2-inner productmaindiv">
@@ -56,11 +55,6 @@ class ComponentToPrint extends React.Component {
 					   	9840886833
 					   </div>
 					   </div>
-					  {/*<div className="invoice-details-2-inner">Issue Date : 10/12/1997</div> */}
-					  {/* <div className="invoice-details-2-inner">Issue Date : 10/12/1997</div>
-					  <div className="invoice-details-2-inner">Issue Date : 10/12/1997</div>
-					  <div className="invoice-details-2-inner">Issue Date : 10/12/1997</div>
-					  <div className="invoice-details-2-inner">Issue Date : 10/12/1997</div> */}
 				</div>
 			</div>
 			<div className="invoice-content">
@@ -69,14 +63,11 @@ class ComponentToPrint extends React.Component {
 					  <div className="invoice-table-header-title item">Item</div>
 					  <div className="invoice-table-header-title quantity">Quantity</div>
 					  <div className="invoice-table-header-title price">Price</div>
-					  {/* <div className="invoice-table-header-title discount">Discount</div>
-					  <div className="invoice-table-header-title tax">Tax</div>
-					  <div className="invoice-table-header-title line-total">lineTotal</div> */}
 				  </div>
 				  {this.state.productList.length>0?
 				  this.state.productList.map((item, index) => {
 				  return <div className="invoice-table-data displayflexspacearound">
-					  <div className="invoice-table-data-content sno">1</div>
+					  <div className="invoice-table-data-content sno">{index+1}</div>
 					  <div className="invoice-table-data-content item">{item.productName}</div>
 					  <div className="invoice-table-data-content quantity">{item.quantity}</div>
 					  <div className="invoice-table-data-content price">{item.productPrice}</div>
