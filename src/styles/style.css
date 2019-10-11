@@ -229,3 +229,11 @@ justify-content: center;
 .printmaindiv{
   width: 50%;
 }
+.displayflexspacearound{
+  display: flex;
+  justify-content: space-around;
+}
+.flexproperty{
+  display: flex;
+}
+

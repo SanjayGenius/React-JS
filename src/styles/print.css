@@ -33,7 +33,7 @@
     padding-top: 5%;
 }
 .invoice-table-header{
-    display: flex;
+    
     font-size: 20px;
     width: 100%;
     border-bottom: 2px solid;
@@ -71,7 +71,7 @@
     text-align: center;
 }
 .invoice-table-data{
-    display: flex;
+    
     padding: 10px 0px;
 }
 .invoice-table-data-content{
@@ -129,5 +129,15 @@
 .invoice-footer-details-2{
      width: 35%;
      display: flex;
-    justify-content: flex-end;
+    
 }
+.watsppimage{
+    width: 30px;
+    height: 30px;
+}
+.watsappimagediv{
+    width: 14%;
+  }
+  .numberStyle{
+      margin-top: 3%;
+  }
