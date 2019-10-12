@@ -50,6 +50,8 @@
 .productmaindiv{
 	display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .productcontent{
 	  display: flex;
@@ -58,6 +60,14 @@
     width: 70%;
     background-color: ghostwhite;
 }
+.productcontent > div{
+  width: 35%;
+  text-align: center;
+}
+.productcontent .edit_delete{
+  width: 29%;
+}
+
 .productAddDiv{
 	margin: 12%;
     padding: 10px;
@@ -134,6 +144,9 @@
 .flexAlignCenterJustifyCenter{
 display: flex;
 justify-content: center;
+}
+.customerDiv{
+  margin-left: 2%;
 }
 .success{
   color:green;

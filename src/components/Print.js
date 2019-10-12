@@ -17,14 +17,13 @@ class ComponentToPrint extends React.Component {
         this.productselect = React.createRef();
 	}
 	componentWillMount(){
-		console.log(this.state.productList.length);
 		var convertedDate=this.getDateFormat(this.state.purchaseDate)
 		this.setState({
 			purchaseDate:convertedDate,
 		})
 	}
 	componentDidMount(){
-		
+		this.props.onLoadCallback();
 	}
 	getDateFormat(date){
         var year=date.getFullYear();
@@ -96,14 +95,27 @@ class App extends React.Component {
 	constructor(props,context){
 		super(props,context);
 	}
+	onLoadCallback(){
+		console.log("called")
+		setTimeout(() => {
+			document.getElementById("printbutton").click();			
+		}, 0);
+	}
+	componentWillMount(){
+		if (!this.props.location.state) {
+			this.props.history.push("billgenerate")
+		}
+	}
     render() {
       return (
         <div className="productmaindiv">
+          <ComponentToPrint onLoadCallback={this.onLoadCallback} {...this.props} ref={el => (this.componentRef = el)} />
+
           <ReactToPrint
-            trigger={() => <a href="#">Print this out!</a>}
-            content={() => this.componentRef}
+            trigger={() => <a id="printbutton" href="#">Print this out!</a>}
+			content={() => this.componentRef}
+			onAfterPrint ={() => this.props.history.push("billgenerate")}
           />
-          <ComponentToPrint {...this.props} ref={el => (this.componentRef = el)} />
         </div>
       );
     }
